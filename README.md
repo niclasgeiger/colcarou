@@ -13,7 +13,7 @@ Example:
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 ```
 
-You also need to load either the minified or not minified versions of the javascript-file and css-file
+You also need to load either the minified or not-minified versions of the javascript-file and css-file
 ```html
 <script src="/PATH/TO/JS/colcarou.min.js" type="text/javascript"></script>
 <link href="/PATH/TO/CSS/colcarou.min.css" type="text/css" rel="stylesheet"/>
