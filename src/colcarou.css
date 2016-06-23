@@ -1,0 +1,54 @@
+.colcarou-frame {
+    font-family:'Helvetica';
+}
+.colcarou-item {
+    float:left;
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+}
+.colcarou-item h1, .colcarou-item p {
+    cursor:default;
+}
+.colcarou-frame .inactive:hover {
+    background: rgba(0,0,0,.2);
+}
+.colcarou-item img {
+    position:absolute;
+    top:0;
+    z-index:-1;
+}
+.colcarou-textbox {
+    position:relative;
+    color:white;
+    z-index:5;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.colcarou-button {
+    text-decoration: none;
+    color:white;
+    background-color:#e60027;
+    padding:10px 10px;
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(51,51,51,1);
+    -moz-box-shadow: 2px 2px 3px 0px rgba(51,51,51,1);
+    box-shadow: 2px 2px 3px 0px rgba(51,51,51,1);
+}
+.colcarou-rotate {
+    transform-origin: 0 0;
+    transform:rotate(-90deg);
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
