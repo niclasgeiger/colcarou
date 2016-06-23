@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Colcarou by Sourge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Colcarou</h1>
+      <h2 class="project-tagline">Collapsing Carousel JQuery Plugin </h2>
+      <a href="https://github.com/Sourge/colcarou" class="btn">View on GitHub</a>
+      <a href="https://github.com/Sourge/colcarou/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Sourge/colcarou/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="colcarou" class="anchor" href="#colcarou" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ColCarou</h1>
+
+<p>Collapsing Carousel JQuery Plugin </p>
+
+<p>This Plugin creates a collapsing carousel via JQuery.</p>
+
+<p><strong>Author</strong> Niclas Geiger</p>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>JQuery needs to be loaded either via CDN or direct link in the header</p>
+
+<p>Example: </p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<p>You also need to load either the minified or not-minified versions of the javascript-file and css-file</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>/PATH/TO/JS/colcarou.min.js<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>/PATH/TO/CSS/colcarou.min.css<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span>/&gt;</pre></div>
+
+<h2>
+<a id="html" class="anchor" href="#html" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>HTML</h2>
+
+<p>The Structure is very simple. You can create a new carousel in html like this:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>slide<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span>&gt;
+        &lt;<span class="pl-ent">div</span>&gt;
+            &lt;<span class="pl-ent">h1</span>&gt;header-text 1&lt;/<span class="pl-ent">h1</span>&gt;
+            &lt;<span class="pl-ent">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipisici elit, 
+            sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.&lt;/<span class="pl-ent">p</span>&gt;
+            &lt;<span class="pl-ent">a</span>  <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#<span class="pl-pds">"</span></span>&gt;More&lt;/<span class="pl-ent">a</span>&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;
+        &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>/URL/TO/YOUR/IMAGE<span class="pl-pds">"</span></span> <span class="pl-e">alt</span>=<span class="pl-s"><span class="pl-pds">"</span>ALTTEXT<span class="pl-pds">"</span></span>/&gt;
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span>&gt;
+        &lt;<span class="pl-ent">div</span>&gt;
+            &lt;<span class="pl-ent">h1</span>&gt;header-text 2&lt;/<span class="pl-ent">h1</span>&gt;
+            &lt;<span class="pl-ent">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipisici elit, 
+            sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.&lt;/<span class="pl-ent">p</span>&gt;
+            &lt;<span class="pl-ent">a</span>  <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#<span class="pl-pds">"</span></span>&gt;More&lt;/<span class="pl-ent">a</span>&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;
+        &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>/URL/TO/YOUR/IMAGE<span class="pl-pds">"</span></span> <span class="pl-e">alt</span>=<span class="pl-s"><span class="pl-pds">"</span>ALTTEXT<span class="pl-pds">"</span></span>/&gt;
+    &lt;/<span class="pl-ent">div</span>&gt;
+
+    ...
+
+  &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>What you choose as id for the first slide does not matter. You are only required to use the same structure as shown</p>
+
+<h2>
+<a id="jquery" class="anchor" href="#jquery" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>JQuery</h2>
+
+<p>You can instantiate your carousel with:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-c1">document</span>).<span class="pl-en">ready</span>(<span class="pl-k">function</span>(){
+  <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#slide<span class="pl-pds">'</span></span>).<span class="pl-en">colcarou</span>();
+});</pre></div>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Options</h2>
+
+<p>The available options are:</p>
+
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th align="center">value (default)</th>
+<th align="right">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>slide_width</td>
+<td align="center">integer (70)</td>
+<td align="right">the width of each collapsed slide</td>
+</tr>
+<tr>
+<td>frame_width</td>
+<td align="center">integer (965)</td>
+<td align="right">the width of the carousel frame</td>
+</tr>
+<tr>
+<td>frame_height</td>
+<td align="center">integer (450)</td>
+<td align="right">the height of the carousel frame</td>
+</tr>
+</tbody>
+</table>
+
+<p>Options can be set like this:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-c1">document</span>).<span class="pl-en">ready</span>(<span class="pl-k">function</span>(){
+  <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#slide<span class="pl-pds">'</span></span>).<span class="pl-en">colcarou</span>({
+    slide_width<span class="pl-k">:</span><span class="pl-c1">100</span>,
+    frame_width<span class="pl-k">:</span><span class="pl-c1">800</span>,
+    frame_height<span class="pl-k">:</span><span class="pl-c1">400</span>
+  });
+});</pre></div>
+
+<h2>
+<a id="future-tasks" class="anchor" href="#future-tasks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Future Tasks</h2>
+
+<ul>
+<li>Implement responsive layout</li>
+<li>Implement JQuery UI events</li>
+</ul>
+
+<h2>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h2>
+
+<p>An example can be viewed <a href="http://colcarou.niclas-geiger.de/">here</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Sourge/colcarou">Colcarou</a> is maintained by <a href="https://github.com/Sourge">Sourge</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
