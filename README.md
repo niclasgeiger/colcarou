@@ -3,6 +3,8 @@ Collapsing Carousel JQuery Plugin
 
 This Plugin creates a collapsing carousel via jquery
 
+Author: Niclas Geiger
+
 ## Requirements ##
 JQuery needs to be loaded either via CDN or direct link in the header
 
@@ -83,5 +85,9 @@ $(document).ready(function(){
 ## Future Tasks ##
 
 - [ ] Implement responsive layout
-- [ ] Implement JQuery UI Events
+- [ ] Implement JQuery UI events
+
+## Example ##
+
+An example can be viewed [here](http://colcarou.niclas-geiger.de/)
 
