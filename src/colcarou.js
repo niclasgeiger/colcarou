@@ -60,7 +60,7 @@
         num_elements = items.size();
         items.width(slide_width);
         items.find('img').width(frame_width/num_elements);
-        items.first().toggleClass('active');
+        items.first().toggleClass('active',true);
         expanded_width = frame_width - ((num_elements-1)*slide_width);
         items.toggleClass('colcarou-item').height(frame_height);
         items.each(function(i){
@@ -95,7 +95,7 @@
                 //remove the border
                 elem.css('border-left','').css('border-right','');
                 //set this element active
-                elem.toggleClass('inactive').toggleClass('active');
+                elem.toggleClass('inactive',false).toggleClass('active',true);
                 //fade text in
                 text.fadeIn();
                 link.fadeIn();
