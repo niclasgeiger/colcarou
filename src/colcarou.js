@@ -172,7 +172,6 @@
         $('.colcarou-textbox').toggleClass('colcarou-rotate',false);
 
         $('.colcarou-text').width('');
-
     }
 
     /**
@@ -182,7 +181,6 @@
     function screen_resize(){
         //frame_width = frame.width();
         update_window_dimensions();
-        frame_width = window_width;
 
         frame.height(frame_height);
         frame.width(frame_width);
@@ -360,6 +358,7 @@
         //set this element to active
         elem.toggleClass('inactive',false);
         elem.toggleClass('active',true);
+        elem.css('border-bottom','');
         text.fadeIn();
         link.fadeIn();
 
