@@ -19,13 +19,11 @@
     width:60%;
 }
 .colcarou-item.active .colcarou-textbox h2 {
-    font-size: 60px;
     font-weight: bold;
     margin-bottom: 38px;
 }
 .colcarou-item.active .colcarou-textbox p {
     margin: 0;
-    font-size: 16px;
     line-height: 31px;
     /* width: 80%*/
 }
