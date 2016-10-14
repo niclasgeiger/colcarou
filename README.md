@@ -95,7 +95,7 @@ $(document).ready(function(){
 
 An example can be viewed [here](http://colcarou.niclas-geiger.de/)
 
-### Update Version 0.2 (14.10.2016) ###
+### Update Version 1.1 (14.10.2016) ###
 
 - added responsive view
 - added autoswitch panels
